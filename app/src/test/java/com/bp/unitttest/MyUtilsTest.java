@@ -20,6 +20,15 @@ public class MyUtilsTest {
         int expected = 14;
         assertEquals(expected, actualNumber);
 
-        
+
+        numbers.clear();
+        numbers.add(1);
+        numbers.add(2);
+        numbers.add(3);
+        numbers.add(4);
+
+        expected= 10;
+        actualNumber = MyUtils.summation(numbers);
+        assertEquals("something went wrong",expected,actualNumber);
     }
 }
