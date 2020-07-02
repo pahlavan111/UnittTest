@@ -43,4 +43,13 @@ public class MyUtilsTest {
 
     }
 
+    @Test
+    public void searchTEst(){
+        int[] numbers ={ 5,6,7,6,1};
+        int numToSearch = 7;
+        Boolean expected = true;
+        Boolean actualRes =MyUtils.searchResult(numbers,numToSearch);
+        assertEquals(expected,actualRes);
+    }
+
 }

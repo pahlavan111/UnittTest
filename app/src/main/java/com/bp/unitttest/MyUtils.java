@@ -7,24 +7,36 @@ import java.util.List;
 
 public class MyUtils {
 
-    public static int summation(List<Integer> numbers){
+    public static int summation(List<Integer> numbers) {
         int sum = 0;
         for (Integer num : numbers) {
-            sum +=num;
+            sum += num;
         }
         return sum;
     }
 
 
-    public static float average (@NotNull int[] integerArray ){
+    public static float average(@NotNull int[] integerArray) {
 
         int sum = 0;
         for (Integer num :
                 integerArray) {
-            sum +=num;
+            sum += num;
         }
 
         return (float) (sum / integerArray.length);
     }
+
+    public static Boolean searchResult(int[] numbers, int numberIsSearchFor) {
+
+        for (Integer num : numbers) {
+            if (numberIsSearchFor == num)
+                return true;
+        }
+        return false;
+
+
+    }
+
 
 }
