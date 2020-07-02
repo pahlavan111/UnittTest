@@ -31,4 +31,7 @@ public class MyUtilsTest {
         actualNumber = MyUtils.summation(numbers);
         assertEquals("something went wrong",expected,actualNumber);
     }
+
+
+
 }
