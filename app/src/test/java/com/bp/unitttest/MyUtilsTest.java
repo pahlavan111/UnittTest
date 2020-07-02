@@ -33,5 +33,14 @@ public class MyUtilsTest {
     }
 
 
+    @Test
+    public void mAverage(){
+
+        int[] numbers = {5,6,4};
+        float expected = 5.0f;
+        float actual = MyUtils.average(numbers);
+        assertEquals(expected,actual,0.1); // یک بازه برای اینکه تا این حد فرق بکنه اشکال نداره در نظر میگیریم :delta
+
+    }
 
 }
